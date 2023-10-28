@@ -62,7 +62,7 @@ const Navbar = () => {
             <Button variant="text" style={customButtonStyle}>
               <Link
                 style={{ color: "#00A97F", textDecoration: "none" }}
-                href="/about"
+                href="#about"
               >
                 ABOUT
               </Link>

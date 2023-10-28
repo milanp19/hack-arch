@@ -6,12 +6,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --bgColor: 2B2C28;
+}
+
+:root {
+  /* --bgColor: rgb(223, 156, 0); */
+  --textColor: black;
 }
 
 body {
   height: 100vh;
-  background-color: aliceblue;
+  background-image: linear-gradient(to bottom, #edf7b5 0%, #8fd3f4 100%);
+  /* background-repeat: ; */
+  background-attachment: fixed;
+  /* background-color: var(--bgColor); */
 }
 
 main {
@@ -327,6 +334,7 @@ a {
 
 .heading {
   font-size: 10rem;
+  color: var(--textColor);
 }
 
 .container {
@@ -397,14 +405,13 @@ a {
   display: flex;
   justify-content: start;
   height: fit-content;
-  width: 700px;
 }
 .animation_2 {
   margin-top: -30px;
   display: flex;
   justify-content: start;
   height: fit-content;
-  width: 900px;
+  width: 30ch;
 }
 .animation_3 {
   margin-top: -30px;
@@ -417,7 +424,18 @@ a {
   padding-top: 100px;
   font-family: "Sometype Mono";
 }
+.hometext2 {
+  padding-top: 100px;
+  font-family: "Sometype Mono";
+}
+.hometext3 {
+  padding-top: 100px;
+  font-family: "Sometype Mono";
+}
 
+.hometext2 p {
+  width: 600px;
+}
 .anim_text:nth-child(1) {
   display: flex;
   align-items: flex-start;
@@ -450,4 +468,27 @@ a {
   width: 2px;
   transform: translateY(4px);
   background-color: black;
+}
+
+#about {
+  width: 1200px;
+  padding-inline: auto;
+}
+
+#about h2 {
+  font-size: 50px;
+  font-family: "Sometype Mono", sans-serif;
+}
+
+#about p {
+  margin-top: 12px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+}
+
+.hometext1 p,
+.hometext2 p,
+.hometext3 p {
+  margin-top: 12px;
+  text-align: start;
 }
