@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --bgColor: 2B2C28;
 }
 
 body {
@@ -16,34 +18,27 @@ main {
   height: 100%;
 }
 
-section {
-  background-color: red;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  
 body {
   color: rgb(var(--foreground-rgb));
-
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
 .button {
-  --color: #00A97F;
+  --color: #00a97f;
   padding: 0.8em 1.7em;
   background-color: transparent;
-  border-radius: .5em;
+  border-radius: 0.5em;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
   font-weight: 400;
   font-size: 16px;
   border: 1px solid;
@@ -51,10 +46,11 @@ a{
   text-transform: uppercase;
   color: var(--color);
   z-index: 1;
- }
- 
- .button::before, .button::after {
-  content: '';
+}
+
+.button::before,
+.button::after {
+  content: "";
   display: block;
   width: 50px;
   height: 50px;
@@ -64,58 +60,58 @@ a{
   z-index: -1;
   background-color: var(--color);
   transition: 1s ease;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bolder;
- }
- 
- .button::before {
-  top: -1em;
-  left: -1em;
- }
- 
- .button::after {
-  left: calc(100% + 1em);
-  top: calc(100% + 1em);
- }
- 
- .button:hover::before, .button:hover::after {
-  height: 410px;
-  width: 410px;
- }
- 
- .button:hover {
-  color: rgb(10, 25, 30);
- }
- 
- .button:active {
-  filter: brightness(.8);
- }
- 
-
-.button__container{
-  display: flex;
-  gap: 15px;
-  font-family: 'Roboto', sans-serif;
 }
 
-.MuiInputBase-input{
+.button::before {
+  top: -1em;
+  left: -1em;
+}
+
+.button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.button:hover::before,
+.button:hover::after {
+  height: 410px;
+  width: 410px;
+}
+
+.button:hover {
+  color: rgb(10, 25, 30);
+}
+
+.button:active {
+  filter: brightness(0.8);
+}
+
+.button__container {
+  display: flex;
+  gap: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.MuiInputBase-input {
   border: none;
 }
 
-.page{
+.page {
   margin-top: 80px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-.design{
-  font-family: 'Lato', sans-serif;
+.design {
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.design2{
-  font-family: 'Sometype Mono', monospace;
+.design2 {
+  font-family: "Sometype Mono", monospace;
   font-size: 60px;
   margin-top: 10%;
   margin-left: 10%;
@@ -319,112 +315,107 @@ a{
   opacity: 1;
 }
 
-.design3{
+.design3 {
   display: flex;
   margin: auto;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 20px;
-  padding-inline: 57px;
-}
-
-  height: 100vh;
+  padding-inline: 160px;
 }
 
 .heading {
   font-size: 10rem;
 }
-.container{
-  height:fit-content;
+
+.container {
+  height: fit-content;
   width: 100%;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  
+  margin-top: 80px;
 }
-.container img{
-  height:150px;
-  width:150px;
+.container img {
+  height: 150px;
+  width: 150px;
   position: absolute;
-  top:205px;
-  left:235px;
-  opacity: 0; 
-  animation: fadeIn 2s ease-in forwards; 
+  top: 100px;
+  left: 235px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
 }
 
 @keyframes fadeIn {
   from {
-    opacity: 0; 
+    opacity: 0;
   }
   to {
-    opacity: 1; 
+    opacity: 1;
   }
 }
-.homepagename{
-height: 20rem;
-} 
+.homepagename {
+  height: 20rem;
+}
 .container h1 {
-  font-family: 'Cinzel', serif;
-  opacity: 0; 
-  animation: fadeIn 2s ease-in forwards; 
+  font-family: "Cinzel", serif;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
 }
 
 @keyframes fadeIn {
   from {
-    opacity: 0; 
+    opacity: 0;
   }
   to {
-    opacity: 1; 
+    opacity: 1;
   }
 }
-.container h3{
-  font-family:'Edu TAS Beginner';
-  opacity: 0; 
-  animation: fadeIn 5s ease-in forwards; 
+.container h3 {
+  font-family: "Edu TAS Beginner";
+  opacity: 0;
+  animation: fadeIn 5s ease-in forwards;
   font-size: 30px;
-  border-top: 0px;
-  left:60%;
+  left: 60%;
   position: absolute;
-  top:45%;
+  top: 35%;
 }
 
 @keyframes fadeIn {
   from {
-    opacity: 0; 
+    opacity: 0;
   }
   to {
-    opacity: 1; 
+    opacity: 1;
   }
 }
 
-.animation_1{
-  margin-top: -30PX;
+.animation_1 {
+  margin-top: -30px;
   display: flex;
   justify-content: start;
-  height:fit-content;
+  height: fit-content;
   width: 700px;
 }
-.animation_2{
-  margin-top: -30PX;
+.animation_2 {
+  margin-top: -30px;
   display: flex;
   justify-content: start;
-  height:fit-content;
+  height: fit-content;
   width: 900px;
-
 }
-.animation_3{
-  margin-top: -30PX;
+.animation_3 {
+  margin-top: -30px;
   display: flex;
   justify-content: start;
   height: fit-content;
 }
 
-
-.hometext1{
-  padding-top: 100PX;
-  font-family: 'Sometype Mono';
+.hometext1 {
+  padding-top: 100px;
+  font-family: "Sometype Mono";
 }
 
 .anim_text:nth-child(1) {
@@ -436,22 +427,21 @@ height: 20rem;
   display: flex;
   align-items: flex-start;
   grid-column: 2 / span 2;
-  margin-top:150px;
+  margin-top: 150px;
 }
 .anim_text:nth-child(3) {
   display: flex;
   align-items: flex-start;
   grid-column: 1 / span 2;
-  margin-top:150px;
+  margin-top: 150px;
 }
 
-
 .anim_container {
+  margin-top: 80px;
   width: 100%;
   display: grid;
   grid-template-columns: auto auto;
-
-} 
+}
 
 .cursor {
   display: inline-block;
@@ -461,4 +451,3 @@ height: 20rem;
   transform: translateY(4px);
   background-color: black;
 }
-
