@@ -492,3 +492,27 @@ a {
   margin-top: 12px;
   text-align: start;
 }
+
+video {
+  width: 800px;
+  aspect-ratio: 16/9;
+}
+
+.screen_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen_container button {
+  padding-inline: 2rem;
+  padding-block: 8px;
+  border-radius: 10px;
+}
+
+.button_container {
+  display: flex;
+  gap: 12px;
+}

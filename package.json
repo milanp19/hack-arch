@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "server": "node app/utils/server.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -16,7 +17,9 @@
     "@mui/material": "^5.14.15",
     "@prisma/client": "^5.5.2",
     "@studio-freight/lenis": "^1.0.27",
+    "express": "^4.18.2",
     "framer-motion": "^10.16.4",
+    "http": "^0.0.1-security",
     "lottie-react": "^2.4.0",
     "next": "13.5.6",
     "next-auth": "^4.24.3",
@@ -25,6 +28,7 @@
     "react": "^18",
     "react-dom": "^18",
     "simple-peer": "^9.11.1",
+    "socket.io": "^4.7.2",
     "socket.io-client": "^4.7.2"
   },
   "devDependencies": {

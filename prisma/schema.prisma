@@ -43,6 +43,7 @@ model User {
   retired       Boolean @default(false)
   accounts      Account[]
   sessions      Session[]
+  rating        Int @default(0) 
   premium       Boolean @default(false)
 }
 

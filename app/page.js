@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import animoldman from "@/public/animoldman.json";
 import animationuser from "@/public/animationuser.json";
 import animationpremium from "@/public/animpremium.json";
-import ScreenReader from "./components/ScreenReader";
 
 const page = () => {
   const options1 = {
@@ -55,7 +54,7 @@ const page = () => {
           className="anim_text"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         >
           <div class="animation_1">{view1}</div>
           <div className="hometext1">
@@ -74,7 +73,7 @@ const page = () => {
           className="anim_text"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         >
           <div class="animation_2">{view2}</div>
           <div className="hometext2">
@@ -92,7 +91,7 @@ const page = () => {
           className="anim_text"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         >
           <div class="animation_3">{view3}</div>
           <div className="hometext3">
@@ -112,11 +111,11 @@ const page = () => {
         id="about"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
       >
         <h2>About Us</h2>
         <div>
-          <p>
+          <p style={{ paddingBottom: "50px" }}>
             Have you ever wished you could get guidance from someone who has
             been there and done that? Someone who has retired from their field
             of expertise and has a wealth of knowledge and experience to share?
