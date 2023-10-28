@@ -14,7 +14,7 @@ const SmoothScroller = ({ children }) => {
 
     requestAnimationFrame(raf);
   }, []);
-  return <div>{children}</div>;
+  return <div className="smoothscroller">{children}</div>;
 };
 
 export default SmoothScroller;

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import animoldman from "@/public/animoldman.json";
 import animationuser from "@/public/animationuser.json";
 import animationpremium from "@/public/animpremium.json";
-import ScreenReader from "./components/ScreenReader";
+import Navbar from "./components/Navbar";
 
 const page = () => {
   const options1 = {
@@ -45,6 +45,8 @@ const page = () => {
   const { View: view3 } = useLottie(options3);
 
   return (
+    <>
+    <Navbar />
     <div class="container">
       <img src="/expertialogo.png"></img>
       <h1 className="heading heading_1">Expertia</h1>
@@ -133,6 +135,7 @@ const page = () => {
         </div>
       </motion.section>
     </div>
+    </>
   );
 };
 

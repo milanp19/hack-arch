@@ -1,7 +1,10 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 const page = () => {
   return (
+    <>
+        <Navbar />
     <div className='page'>
         <div className='design3'>
         <div classname="card" >
@@ -118,6 +121,7 @@ const page = () => {
         </div>
         </div>
     </div>
+    </>
     
   )
 }

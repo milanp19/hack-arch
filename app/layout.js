@@ -73,7 +73,6 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <AuthProvider>
-          <Navbar />
           <SmoothScroller>{children}</SmoothScroller>
           <Footer />
         </AuthProvider>
