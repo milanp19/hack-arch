@@ -43,6 +43,7 @@ model User {
   retired       Boolean @default(false)
   accounts      Account[]
   sessions      Session[]
+  premium       Boolean @default(false)
 }
 
 model VerificationToken {
@@ -52,4 +53,5 @@ model VerificationToken {
 
   @@unique([identifier, token])
 }
+
 
