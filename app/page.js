@@ -1,9 +1,9 @@
+"use client";
 import Image from "next/image";
+import ScreenReader from "./components/ScreenReader";
+import { motion } from "framer-motion";
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    
-    </main>
-  );
+  return <main>{/* <ScreenReader /> */}</main>;
+
 }

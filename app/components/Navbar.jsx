@@ -8,6 +8,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 
 const Navbar = () => {
   const { data: session } = useSession();
+
   const customInputStyle = {
     borderRadius: '10px'
   };
@@ -49,6 +50,7 @@ const Navbar = () => {
         ), }} style={customcolourstyle} placeholder='Search...'/>
         </div>
       <h1>
+        <Link href="#about">about</Link>
         {!session ? (
         <div class="button__container">
         <button  class="button" >
