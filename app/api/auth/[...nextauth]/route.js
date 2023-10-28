@@ -52,6 +52,10 @@ export const authOptions = {
     colorScheme: "light",
   },
 
+  pages: {
+    signIn: '/signin'
+  },
+
   secret: process.env.NEXTAUTH_SECRET,
 };
 
