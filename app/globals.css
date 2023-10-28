@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -18,4 +21,138 @@ section {
   height: 100%;
   display: flex;
   justify-content: center;
+  
+body {
+  height: 100vh;
 }
+
+.heading {
+  font-size: 10rem;
+}
+.container{
+  height:fit-content;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+.container img{
+  height:150px;
+  width:150px;
+  position: absolute;
+  top:205px;
+  left:235px;
+  opacity: 0; 
+  animation: fadeIn 2s ease-in forwards; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1; 
+  }
+}
+.homepagename{
+height: 20rem;
+} 
+.container h1 {
+  font-family: 'Cinzel', serif;
+  opacity: 0; 
+  animation: fadeIn 2s ease-in forwards; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1; 
+  }
+}
+.container h3{
+  font-family:'Edu TAS Beginner';
+  opacity: 0; 
+  animation: fadeIn 5s ease-in forwards; 
+  font-size: 30px;
+  border-top: 0px;
+  left:60%;
+  position: absolute;
+  top:45%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
+.animation_1{
+  margin-top: -30PX;
+  display: flex;
+  justify-content: start;
+  height:fit-content;
+  width: 700px;
+}
+.animation_2{
+  margin-top: -30PX;
+  display: flex;
+  justify-content: start;
+  height:fit-content;
+  width: 900px;
+
+}
+.animation_3{
+  margin-top: -30PX;
+  display: flex;
+  justify-content: start;
+  height: fit-content;
+}
+
+
+.hometext1{
+  padding-top: 100PX;
+  font-family: 'Sometype Mono';
+}
+
+.anim_text:nth-child(1) {
+  display: flex;
+  align-items: flex-start;
+  grid-column: 1 / span 2;
+}
+.anim_text:nth-child(2) {
+  display: flex;
+  align-items: flex-start;
+  grid-column: 2 / span 2;
+  margin-top:150px;
+}
+.anim_text:nth-child(3) {
+  display: flex;
+  align-items: flex-start;
+  grid-column: 1 / span 2;
+  margin-top:150px;
+}
+
+
+.anim_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+
+} 
+
+.cursor {
+  display: inline-block;
+  height: 120px;
+  margin-left: 12px;
+  width: 2px;
+  transform: translateY(4px);
+  background-color: black;
+}
+
