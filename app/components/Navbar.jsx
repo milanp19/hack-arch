@@ -6,10 +6,10 @@ import { useSession } from "next-auth/react";
 
 const Navbar = () => {
   const { data: session } = useSession();
-
   return (
     <div>
       <h1>
+        <Link href="#about">about</Link>
         {!session ? (
           <Link href="/api/auth/signin">Login</Link>
         ) : (
