@@ -3,7 +3,7 @@ import ScreenReader from "../components/ScreenReader";
 
 const page = () => {
   return (
-    <div style={{ height: "100%" }}>
+    <div>
       <ScreenReader />
     </div>
   );

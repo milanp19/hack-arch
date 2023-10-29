@@ -8,6 +8,7 @@ import animoldman from "@/public/animoldman.json";
 import animationuser from "@/public/animationuser.json";
 import animationpremium from "@/public/animpremium.json";
 import ScreenReader from "./components/ScreenReader";
+import Navbar from "./components/Navbar";
 
 const page = () => {
   const options1 = {

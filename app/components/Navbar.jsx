@@ -91,7 +91,7 @@ const Navbar = () => {
           </div>
           <h1>
             {!session ? (
-              <div class="button__container">
+              <div className="button__container">
                 <button className="button">
                   <Link href="/api/auth/signin">Login</Link>
                 </button>
